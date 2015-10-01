@@ -1,6 +1,12 @@
 require 'spec_helper_integration'
 
 module Doorkeeper::OAuth
+  describe ClientCredentialsRequest do
+    subject do
+      # TODO: Do we need something here too?
+    end
+  end
+
   describe TokenRequest do
     let :application do
       scopes = double(all: ['public'])
